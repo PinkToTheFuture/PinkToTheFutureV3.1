@@ -41,11 +41,13 @@ class BasicTankKotlin : LinearOpMode() {
             if (gamepad1.dpad_up) fastency = 1.0
             if (gamepad1.dpad_down) fastency = 0.3
 
+            //left stick
             RFpower = (-((gamepad1.left_stick_y + gamepad1.left_stick_x) / 2)).toDouble()
             RBpower = (-((gamepad1.left_stick_y - gamepad1.left_stick_x) / 2)).toDouble()
             LFpower = (-((gamepad1.left_stick_y - gamepad1.left_stick_x) / 2)).toDouble()
             LBpower = (-((gamepad1.left_stick_y + gamepad1.left_stick_x) / 2)).toDouble()
 
+            //right stick
             RFpower = RFpower - gamepad1.right_stick_x
             RBpower = RBpower - gamepad1.right_stick_x
             LFpower = LFpower + gamepad1.right_stick_x
