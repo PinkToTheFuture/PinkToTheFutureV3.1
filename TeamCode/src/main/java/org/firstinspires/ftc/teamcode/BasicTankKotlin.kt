@@ -12,11 +12,10 @@ import com.qualcomm.robotcore.util.Range
 /**
  * Created by seb7 on 9/3/2017.
  */
-@Suppress("UNREACHABLE_CODE")
+
 @TeleOp(name = "KotlinOmni", group = "PinkToTheFuture")
 class BasicTankKotlin : LinearOpMode() {
     override fun runOpMode() {
-        throw InterruptedException()
 
         var RFpower: Double
         var LFpower: Double
